@@ -6,7 +6,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const swaggerUi = require('swagger-ui-express');
 const errorHandler = require('./middleware/errorHandler');
-// const router = require('./routes');
+const router = require('./routes');
 const swaggerDoc = require('../docs/swagger-doc.json');
 
 config();
@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(helmet());
 app.use(morgan('dev'));
 
-// app.use('/api/v1', router);
+app.use('/api/v1', router);
 app.use('/api/v1/docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 app.get('/api/v1', (request, response) =>
