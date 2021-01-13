@@ -93,7 +93,7 @@ Each response will be returned with one of the following HTTP status codes:
 ## Project Status
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/4bbf6ff4e1701c8355e2#?env%5BImage%20Repository%20Development%20Environment%5D=W3sia2V5IjoibG9jYWxob3N0IiwidmFsdWUiOiJodHRwOi8vbG9jYWxob3N0OjY3ODkiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InN0YWdpbmciLCJ2YWx1ZSI6Imh0dHBzOi8vaW1nLXJlcG8tc3RhZ2luZy5oZXJva3VhcHAuY29tIiwiZW5hYmxlZCI6dHJ1ZX1d)
-![Deploy to Heroku staging](https://github.com/devcareer/Get-Intern-backend/workflows/Deploy%20to%20Heroku%20Staging/badge.svg)
+![Deploy to Heroku Staging](https://github.com/meetKazuki/image-repository/workflows/Deploy%20to%20Heroku%20Staging/badge.svg)
 
 ## Getting Started
 
