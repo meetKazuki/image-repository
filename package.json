@@ -13,7 +13,6 @@
     "dev": "nodemon src/server.js",
     "dev:debug": "nodemon --inspect src/server.js",
     "heroku-postbuild": "npm run db:up",
-    "predev": "npx gulp",
     "start": "node src/server.js",
     "sync:env": "sync-dotenv",
     "test": "nyc mocha tests/index.spec.js"
@@ -30,12 +29,14 @@
   },
   "homepage": "https://github.com/meetKazuki/image-repository#readme",
   "dependencies": {
+    "argon2-ffi": "^2.0.0",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.9.2",
     "helmet": "^4.3.1",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "pg": "^8.5.1",
     "sequelize": "^6.3.5",

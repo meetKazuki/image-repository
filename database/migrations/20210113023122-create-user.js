@@ -11,21 +11,29 @@ module.exports = {
         type: Sequelize.UUID,
         defaultValue: Sequelize.literal('uuid_generate_v4()'),
       },
-      first_name: {
-        type: Sequelize.STRING
+      username: {
+        type: Sequelize.STRING,
+      },
+      email: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      password: {
+        allowNull: false,
+        type: Sequelize.STRING,
       },
       created_at: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updated_at: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE,
+      },
     });
   },
 
   down: async (queryInterface) => {
     await queryInterface.dropTable('users');
-  }
+  },
 };
