@@ -102,3 +102,15 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Dev folders
+.idea
+.dump
+client/
+database/dbml
+database/dump
+dist/
+
+# Dev files
+package-lock.json
+database.sqlite
