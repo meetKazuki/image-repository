@@ -1,0 +1,10 @@
+.dump
+.github
+.idea
+.nyc_output
+docs
+node_modules
+
+src/config/mongoose.js
+src/routes
+src/validators
